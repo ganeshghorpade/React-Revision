@@ -1,3 +1,11 @@
+/* In React, setState is asynchronous and batched.
+When we call setCount(count + 1) multiple times in the same render cycle, 
+all calls use the same stale count value, so the state increases only once. 
+- so first time prv value is 0 we already set seen useState(0);
+ so first time 0 + 1 = 1
+
+*/
+
 import './App.css'
 import { useState } from 'react'
 
@@ -5,16 +13,15 @@ function App() {
 const [count,SetCount] =useState(0);
 
 function countInc (){
-  SetCount(count+1);
+  //SetCount(count+1);
+  SetCount((prv)=>prv +1);
 }
 
 function countDec(){
   if(count>0){
-    SetCount(count-1);
+    SetCount((prv)=>prv-1);
   }
 }
-
-
   return (
     <>
       <h1>Counter app</h1>
