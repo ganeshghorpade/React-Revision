@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+.main{
+    margin: 50px 0px 0px 100px;
+    background-color: rgb(1, 1, 32);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 5px;
+    font-size: large;
+}
+
+h1{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.input-1{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+    width:400px;
+    margin-right: 3px;
+    padding: 5px;
+}
+.copy{
+    margin-left: 5px;
+    background-color: green;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+
+.in-two{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.two{
+    margin: 10px;
+}
+
+.gen-btn{
+    background-color: green;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
